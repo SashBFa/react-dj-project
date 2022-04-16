@@ -1,0 +1,83 @@
+.nav{
+  position: relative;
+  overflow: hidden;
+  &__active{
+    display: none;
+  }
+  &__logo{
+    background: $grey;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    img{
+      width: 15rem;
+    }
+  }
+  &__burger{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  }
+  &__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: $white;
+  }
+  &__button{
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: transparent;
+    mix-blend-mode: difference;
+  }
+  &__box{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    width: calc(100% - 4rem);
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link{
+    list-style: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $grey;
+    font-weight: 300;
+    &:hover{
+      color: $purple;
+    }
+  }
+}
+.refresh {
+  padding: 1rem;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  width: 2rem;
+  height: 2rem;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

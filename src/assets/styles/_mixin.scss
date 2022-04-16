@@ -1,0 +1,20 @@
+@mixin introMob{
+	max-width: 320px;
+	margin: 0 2rem;
+	padding: 2rem;
+}
+@mixin introTab{
+	max-width: 767px;
+	margin: 0 auto;
+	padding: 4rem;
+}
+@mixin introDesk{
+	max-width: 1023px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+@mixin introLarge{
+	max-width: 1023px;
+	margin: 0 auto;
+	padding: 2rem;
+}
