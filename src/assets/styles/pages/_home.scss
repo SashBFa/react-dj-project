@@ -1,0 +1,24 @@
+.viewDisco{
+  position: relative;
+  margin-top: 4rem;
+  &__parallax{
+    height: 25rem;
+    width: 100vw;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url(./../../../../public/assets/images/homepage-latest-releases-background.jpg);
+    background-position: left;
+    background-size: cover;
+  }
+  &__box{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      color: $white;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}

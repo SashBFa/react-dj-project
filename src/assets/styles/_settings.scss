@@ -14,6 +14,7 @@
 }
 body{
   color: $grey;
+  height: 600vh;
 }
 
 .button{
@@ -32,5 +33,8 @@ body{
   cursor: pointer;
   &:hover{
     transform: scale(0.95);
+  }
+  &--big{
+    width: 20rem;
   }
 }
