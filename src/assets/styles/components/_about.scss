@@ -1,0 +1,40 @@
+.about{
+  margin: 0 2rem;
+  &__img{
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 0.1rem $shadow;
+  }
+  &__title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  &__p{
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  &__comment{
+    font-size: 1.6rem;
+    margin: 1.5rem 0rem 1.5rem 2rem;
+    font-weight: 300;
+  }
+  &__path{
+    position: relative;
+    &--left{
+      position: absolute;
+      clip-path: polygon(31% 0, 64% 0, 44% 100%, 0% 100%);
+      width: 1.8rem;
+      height: 2rem;
+      background: $purple2;
+    }
+    &--right{
+      position: absolute;
+      left: 1.2rem;
+      clip-path: polygon(31% 0, 64% 0, 57% 100%, 0% 100%);
+      width: 1.8rem;
+      height: 2rem;
+      background: $purple2;
+    }
+  }
+}
