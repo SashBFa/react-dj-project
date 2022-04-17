@@ -5,6 +5,7 @@ import NextGig from "../components/NextGig";
 import { Parallax, Background } from "react-parallax";
 import { NavLink } from "react-router-dom";
 import Album from "../components/Album";
+import Fanbase from "../components/Fanbase";
 
 const Home = () => {
   return (
@@ -63,6 +64,7 @@ const Home = () => {
         </p>
         <Album show={3} />
       </div>
+      <Fanbase />
     </main>
   );
 };

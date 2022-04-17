@@ -10,7 +10,6 @@ const PlayerAudio = () => {
 
   // Destructure for conciseness
   const { title, audioSrc } = musicData[trackIndex];
-
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
   const intervalRef = useRef();
@@ -72,7 +71,7 @@ const PlayerAudio = () => {
     }
   }, [isPlaying]);
 
-  // Handles cleanup and setup when changing tracks
+  // Handles cleanup and setup when changing musicData
   useEffect(() => {
     audioRef.current.pause();
 
