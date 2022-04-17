@@ -1,0 +1,42 @@
+.lastestReleases{
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  &__p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: center;
+    color: $grey4;
+  }
+}
+
+.album{
+  &__card{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__cover{
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 0.1rem $shadow;
+  }
+  &__title{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  &__year{
+    font-size: 1rem;
+    font-weight: 300;
+    color: $grey4;
+  }
+}

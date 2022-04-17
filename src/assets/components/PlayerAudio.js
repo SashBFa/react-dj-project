@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import tracks from "../data/tracks";
+import { musicData } from "../data/tracks";
 import AudioControls from "./AudioControls";
 
 const PlayerAudio = () => {
@@ -9,7 +9,7 @@ const PlayerAudio = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Destructure for conciseness
-  const { title, audioSrc } = tracks[trackIndex];
+  const { title, audioSrc } = musicData[trackIndex];
 
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
@@ -49,14 +49,14 @@ const PlayerAudio = () => {
 
   const toPrevTrack = () => {
     if (trackIndex - 1 < 0) {
-      setTrackIndex(tracks.length - 1);
+      setTrackIndex(musicData.length - 1);
     } else {
       setTrackIndex(trackIndex - 1);
     }
   };
 
   const toNextTrack = () => {
-    if (trackIndex < tracks.length - 1) {
+    if (trackIndex < musicData.length - 1) {
       setTrackIndex(trackIndex + 1);
     } else {
       setTrackIndex(0);
@@ -98,7 +98,6 @@ const PlayerAudio = () => {
   }, []);
 
   const secToTime = (tot) => {
-    let hours = Math.floor(tot / 3600);
     tot %= 3600;
     let minutes = Math.floor(tot / 60);
     let seconds = Math.floor(tot % 60);

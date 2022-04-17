@@ -149,6 +149,19 @@ const Navigation = () => {
               about
             </motion.li>
           </NavLink>
+          <NavLink
+            to={"/tour"}
+            className={(nav) => (nav.isActive ? "nav__active" : "")}
+          >
+            <motion.li
+              className="nav__link"
+              variants={variants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              tour
+            </motion.li>
+          </NavLink>
         </motion.ul>
       </motion.div>
     </nav>

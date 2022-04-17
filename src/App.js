@@ -6,6 +6,7 @@ import Discography from "./assets/pages/Discography";
 import Err from "./assets/pages/Err";
 import Gallery from "./assets/pages/Gallery";
 import Home from "./assets/pages/Home";
+import Tour from "./assets/pages/Tour";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/discography" element={<Discography />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/tour" element={<Tour />} />
           <Route path="*" element={<Err />} />
         </Routes>
       </AnimatePresence>
