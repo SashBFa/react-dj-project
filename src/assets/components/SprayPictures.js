@@ -6,12 +6,13 @@ const SprayPictures = () => {
   const [nbr2, setNbr2] = useState();
   const [nbr3, setNbr3] = useState();
   const [nbr4, setNbr4] = useState();
+
   useEffect(() => {
     setNbr1(Math.floor(Math.random() * 150 * (Math.random() > 0.4 ? 1 : -1)));
     setNbr2(Math.floor(Math.random() * 150 * (Math.random() > 0.4 ? 1 : -1)));
     setNbr3(Math.floor(Math.random() * 150 * (Math.random() > 0.4 ? 1 : -1)));
     setNbr4(Math.floor(Math.random() * 150 * (Math.random() > 0.4 ? 1 : -1)));
-  }, [nbr1]);
+  }, []);
 
   const transition = {
     ease: "easeInOut",
