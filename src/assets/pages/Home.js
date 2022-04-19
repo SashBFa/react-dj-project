@@ -6,6 +6,7 @@ import { Parallax, Background } from "react-parallax";
 import { NavLink } from "react-router-dom";
 import Album from "../components/Album";
 import Fanbase from "../components/Fanbase";
+import TourSchedule from "../components/TourSchedule";
 
 const Home = () => {
   return (
@@ -65,6 +66,7 @@ const Home = () => {
         <Album show={3} />
       </div>
       <Fanbase />
+      <TourSchedule />
     </main>
   );
 };
